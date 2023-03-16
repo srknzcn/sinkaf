@@ -36,10 +36,10 @@ class Sinkaf:
             finally:
                 from transformers import AutoTokenizer, AutoModel
             # print("Tek seferlik BERT kurulumu gerekebilmektedir.\n")
-            # self.tokenizer = AutoTokenizer.from_pretrained("dbmdz/bert-base-turkish-128k-uncased")
-            # self.bert = AutoModel.from_pretrained("dbmdz/bert-base-turkish-128k-uncased")
-            self.tokenizer = AutoTokenizer.from_pretrained("dbmdz/convbert-base-turkish-mc4-uncased")
-            self.bert = AutoModel.from_pretrained("dbmdz/convbert-base-turkish-mc4-uncased")
+            self.tokenizer = AutoTokenizer.from_pretrained("dbmdz/bert-base-turkish-128k-uncased")
+            self.bert = AutoModel.from_pretrained("dbmdz/bert-base-turkish-128k-uncased")
+            # self.tokenizer = AutoTokenizer.from_pretrained("dbmdz/convbert-base-turkish-mc4-uncased")
+            # self.bert = AutoModel.from_pretrained("dbmdz/convbert-base-turkish-mc4-uncased")
 
     def _bert_vectorize(self, texts):
         input_ids = self._tokenize_input(texts)
