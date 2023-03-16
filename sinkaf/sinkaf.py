@@ -16,7 +16,6 @@ class Sinkaf:
     LINEAR_MODEL_NAME = "linear"
 
     def __init__(self, model=LINEAR_MODEL_NAME):
-
         self.model = model
 
         if self.model == Sinkaf.LINEAR_MODEL_NAME:
