@@ -30,7 +30,7 @@ class Preprocessor(BaseEstimator, TransformerMixin):
         return self
 
     def transform(self, X, y=None):
-        
+
         # if used for testing
         if (isinstance(X, list)):
             return [self.pre_process(x) for x in X]
